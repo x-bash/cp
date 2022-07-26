@@ -4,8 +4,7 @@
 # license:      GPLv3
 
 ___x_cmd_cp(){
-    local lastarg
-    eval 'lastarg="$'$#'"'
+    local lastarg;  eval 'lastarg="$'$#'"'
     ___x_cmd_ensurefp "$lastarg"
 
     command cp "$@"
