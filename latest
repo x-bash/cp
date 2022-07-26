@@ -5,6 +5,10 @@
 
 
 ___x_cmd_cp(){
+    local lastarg
+    eval 'lastarg="$'$#'"'
+    ___x_cmd_ensurefp "$lastarg"
+
     cp "$@"
 }
 
