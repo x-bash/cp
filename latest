@@ -9,7 +9,7 @@ ___x_cmd_cp(){
     eval 'lastarg="$'$#'"'
     ___x_cmd_ensurefp "$lastarg"
 
-    cp "$@"
+    command cp "$@"
 }
 
 xrc setmain ___x_cmd_cp
